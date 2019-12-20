@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     if (guest.getName() != null && guest.getSurname() != null && guest.getNumber() != null) {
                         Log.d("Debugging: ", "Getting Data From the API");
 
-                        String message = "Hi, " + guest.getName() + "." + text;
+                        String message = "Hi, " + guest.getName() + ". " + text;
                         sendTextMessage(message, guest.getNumber());
                         Toast.makeText(getApplicationContext(), "Sending...", Toast.LENGTH_LONG).show();
                     }
